@@ -1,7 +1,7 @@
 /**
  * About component
  *
- * Space for you to describe more about yourself.
+ * Space for you to describe more about yourself or your project.
  */
 
 import React from "react";
@@ -12,72 +12,61 @@ import React from "react";
  * Below is a sample image. Upload the image of your choice into the "images"
  * directory and import here for use. Then, set imageAltText to string that 
  * represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a image you
- * freely use on your site.
  */
-import image from "../images/motion-background.jpg";
+import image from "../images/WavesPro_JEVG.svg";
 
 const imageAltText = "purple and blue abstract background";
 
 /**
- * Sort description that expands on your title on the Home component.
+ * Detailed project description
  */
-const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+const description = `
+  This work presents a methodology for synthetic EEG signal generation to simulate frequency
+  bands, incorporate noise, and emulate specific phenomena. A Python-based tool allows controlled
+  signal generation and export in various formats, and features a visualizer for analyzing user-uploaded
+  signals in TXT, CSV, or EDF formats. EEGLAB evaluation confirms the accuracy and consistency of the 
+  generated signals. The tool supports research, diagnosis, and data analysis models requiring large 
+  datasets, particularly in neurological diseases like epilepsy. Pending web hosting, the tool will 
+  enhance accessibility and usability for broader applications.
+`;
 
 /**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
+ * Authors of the project
  */
-const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
-];
-
-/**
- * Use this to give more information about what you are passionate about,
- * how you best work, or even a quote. This will help someone learn more
- * about you on a professional level.
- */
-const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+const authors = `
+   Laura Ivoone G. J;  
+   Blanca T. C;  
+   José Emmanuel V. G. 
+`;
 
 const About = () => {
   return (
-    <section className="padding" id="about">
-      <img className="background" src={image} alt={imageAltText} />
+    <section className="padding" id="about" style={{ position: "relative" }}>
+      <img className="background" src={image} alt={imageAltText} style={{ width: "100%", height: "100%", objectFit: "cover", position: "absolute", zIndex: -2 }} />
+      <div style={{ backgroundColor: "rgba(0, 0, 0, 0.3)", position: "absolute", top: 0, left: 0, right: 0, bottom: 0, zIndex: -1 }}></div>
       <div
         style={{
-          backgroundColor: "white",
-          width: "50%",
+          backgroundColor: "rgba(255, 255, 255, 0.9)",
+          width: "60%",
           padding: "4rem",
           margin: "3rem auto",
+          borderRadius: "10px",
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
           textAlign: "center",
+          position: "relative",
+          zIndex: 1,
         }}
       >
-        <h2>About Myself</h2>
-        <p className="large">{description}</p>
+        <h2>About This Project</h2>
+        <p className="large" style={{ fontSize: "1.25rem", lineHeight: "1.6" }}>
+          {description}
+        </p>
         <hr />
-        <ul
-          style={{
-            textAlign: "left",
-            columns: 2,
-            fontSize: "1.25rem",
-            margin: "2rem 3rem",
-            gap: "3rem",
-          }}
-        >
-          {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
-          ))}
-        </ul>
-        <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        <p style={{ fontSize: "1rem", fontStyle: "italic", marginTop: "2rem" }}>
+          <strong>Authors:</strong>
+          <br />
+          {authors}
+        </p>
       </div>
     </section>
   );

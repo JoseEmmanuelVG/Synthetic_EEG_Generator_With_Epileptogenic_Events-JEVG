@@ -1,58 +1,41 @@
 /**
  * Portfolio component
  *
- * Highlights some of  your creations. These can be designs, websites,
- * open source contributions, articles you've written and more.
+ * Highlights some of your creations. These can be designs, websites,
+ * open source contributions, articles you've written, and more.
  *
- * This is a great area for you to to continually add to and refine
+ * This is a great area for you to continually add to and refine
  * as you continue to learn and create.
  */
 
 import React from "react";
 
 /**
- * Desk image
- *
- * Below is a sample desk image. Feel free to update this to an image of your choice,
- * updating below imageAltText to string that represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a photo you
- * freely use on your site.
+ * Software Versions and Articles lists
  */
-import image from "../images/design-desk.jpeg";
+const softwareVersions = [
+  {
+    title: "V1: Generador de EEG Sintético con Eventos Epileptogénicos / Synthetic EEG Generator with Epileptogenic Events",
+    description: "Click the link above to access the first version.",
+    url: "https://eeg-synth-gen-jevg-083692c3d165.herokuapp.com/generacion-detallada",
+  },
+  {
+    title: "V2: Acute morphology, visualizer for txt, csv, and edf formats",
+    description: "This version will introduce a new acute morphology and a visualizer for EEG files in TXT, CSV, and EDF formats. (in the process of web hosting)",
+    url: "#", // Replace with actual URL when available
+  },
+];
 
-const imageAltText = "desktop with books and laptop";
-
-/**
- * Project list
- *
- * An array of objects that will be used to display for your project
- * links section. Below is a sample, update to reflect links you'd like to highlight.
- */
-const projectList = [
+const articles = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
-    description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+    title: "CORE 2023",
+    description: "Placeholder for CORE 2023 article link.",
+    url: "#", // Replace with actual URL
   },
   {
-    title: "Web Development for Beginners",
-    description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
-  },
-  {
-    title: "My Resume Site",
-    description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
-  },
-  {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+    title: "CCE 2024",
+    description: "Placeholder for CCE 2024 article link.",
+    url: "#", // Replace with actual URL
   },
 ];
 
@@ -60,21 +43,24 @@ const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-            src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
-            alt={imageAltText}
-          />
-        </div>
-        <div className="container">
-          {projectList.map((project) => (
-            <div className="box" key={project.title}>
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+      <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", paddingTop: "3rem" }}>
+        <div style={{ width: "45%" }}>
+          <h3 style={{ textAlign: "center", marginBottom: "1rem" }}>Software Versions</h3>
+          {softwareVersions.map((software) => (
+            <div className="box" key={software.title} style={{ paddingBottom: "1.5rem", border: "1px solid #ddd", padding: "1rem", borderRadius: "8px", marginBottom: "1rem" }}>
+              <a href={software.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "#1a73e8" }}>
+                <h4 style={{ fontSize: "1.5rem", fontWeight: "bold", textDecoration: "underline", marginBottom: "0.5rem" }}>{software.title}</h4>
               </a>
-              <p className="small">{project.description}</p>
+              <p className="small" style={{ fontSize: "1.1rem", color: "#555" }}>{software.description}</p>
+            </div>
+          ))}
+        </div>
+        <div style={{ width: "45%" }}>
+          <h3 style={{ textAlign: "center", marginBottom: "1rem" }}>Articles</h3>
+          {articles.map((article) => (
+            <div className="box" key={article.title} style={{ paddingBottom: "1.5rem", border: "1px solid #ddd", padding: "1rem", borderRadius: "8px", marginBottom: "1rem" }}>
+              <h4 style={{ fontSize: "1.5rem", fontWeight: "bold", marginBottom: "0.5rem" }}>{article.title}</h4>
+              <p className="small" style={{ fontSize: "1.1rem", color: "#555" }}>{article.description}</p>
             </div>
           ))}
         </div>
