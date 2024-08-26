@@ -3,22 +3,22 @@
   "version": "1.0.0",
   "description": "Educator JS Codespace Template",
   "source": "src/index.html",
-  "homepage": "https://github.com/microsoft/codespaces-teaching-template-js#readme",
+  "homepage": "https://JoseEmmanuelVG.github.io/Synthetic_EEG_Generator_With_Epileptogenic_Events-JEVG",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://{github-username}.github.io/{repo-name}'",
+    "build-gh": "parcel build --public-url 'https://JoseEmmanuelVG.github.io/Synthetic_EEG_Generator_With_Epileptogenic_Events-JEVG'",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microsoft/codespaces-teaching-template-js.git"
+    "url": "git+https://github.com/JoseEmmanuelVG/Synthetic_EEG_Generator_With_Epileptogenic_Events-JEVG.git"
   },
   "author": "Microsoft",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/microsoft/codespaces-teaching-template-js/issues"
+    "url": "git+https://github.com/JoseEmmanuelVG/Synthetic_EEG_Generator_With_Epileptogenic_Events-JEVG.git"
   },
   "dependencies": {
     "react": "^18.2.0",
