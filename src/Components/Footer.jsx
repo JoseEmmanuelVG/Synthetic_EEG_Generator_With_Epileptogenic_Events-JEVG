@@ -67,7 +67,7 @@ const Footer = (props) => {
           </a>
         )}
         {linkedIn && (
-          <a href="https://www.linkedin.com/notifications/?filter=all" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/vazquez-galan-jose-emmanuel-664968221/" target="_blank" rel="noopener noreferrer">
             <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
           </a>
         )}
