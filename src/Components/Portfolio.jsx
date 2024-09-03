@@ -29,15 +29,16 @@ const softwareVersions = [
 const articles = [
   {
     title: "CORE 2023",
-    description: "Placeholder for CORE 2023 article link.",
-    url: "#", // Replace with actual URL
+    description: "Click the link to view the CORE 2023 article.",
+    url: "public/CORE_2023-JEVG.pdf",  // Ruta relativa al archivo PDF en la carpeta public
   },
   {
     title: "CCE 2024",
-    description: "Placeholder for CCE 2024 article link.",
-    url: "#", // Replace with actual URL
+    description: "Click the link to view the CCE 2024 article.",
+    url: "public/CCE_2024-JEVG.pdf",  // Ruta relativa al archivo PDF en la carpeta public
   },
 ];
+
 
 const Portfolio = () => {
   return (
@@ -59,7 +60,9 @@ const Portfolio = () => {
           <h3 style={{ textAlign: "center", marginBottom: "1rem" }}>Articles</h3>
           {articles.map((article) => (
             <div className="box" key={article.title} style={{ paddingBottom: "1.5rem", border: "1px solid #ddd", padding: "1rem", borderRadius: "8px", marginBottom: "1rem" }}>
-              <h4 style={{ fontSize: "1.5rem", fontWeight: "bold", marginBottom: "0.5rem" }}>{article.title}</h4>
+              <a href={article.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "#1a73e8" }}>
+                <h4 style={{ fontSize: "1.5rem", fontWeight: "bold", textDecoration: "underline", marginBottom: "0.5rem" }}>{article.title}</h4>
+              </a>
               <p className="small" style={{ fontSize: "1.1rem", color: "#555" }}>{article.description}</p>
             </div>
           ))}
