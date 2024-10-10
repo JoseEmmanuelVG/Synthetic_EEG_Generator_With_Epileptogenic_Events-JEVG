@@ -30,11 +30,16 @@ const articles = [
   {
     title: "CORE 2023",
     description: "Click the link to view the CORE 2023 article.",
-    url: "public/CORE_2023-JEVG.pdf",  // Ruta relativa al archivo PDF en la carpeta public
+    url: "https://www.rcs.cic.ipn.mx/2024_153_5/Synthetic%20EEG%20Signal%20Generator%20of%20Morphologies%20Associated%20with%20Epileptogenic%20Events.pdf",  // URL directa al artículo
+  },
+  {
+    title: "Newspaper Core Issue",
+    description: "Click the link to view the newspaper issue.",
+    url: "https://www.rcs.cic.ipn.mx/2024_153_5/",  // URL a la edición del periódico
   },
   {
     title: "CCE 2024",
-    description: "Click the link to view the CCE 2024 article.",
+    description: "Click the link to view the CCE 2024 article. (In the process of being published)",
     url: "public/CCE_2024-JEVG.pdf",  // Ruta relativa al archivo PDF en la carpeta public
   },
 ];
