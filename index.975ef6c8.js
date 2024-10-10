@@ -27632,7 +27632,7 @@ const Footer = (props)=>{
                         columnNumber: 11
                     }, undefined),
                     linkedIn && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: "https://www.linkedin.com/notifications/?filter=all",
+                        href: "https://www.linkedin.com/in/vazquez-galan-jose-emmanuel-664968221/",
                         target: "_blank",
                         rel: "noopener noreferrer",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27718,7 +27718,7 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","../images/socials/github.svg":"vP2m6","../images/socials/linkedin.svg":"5XSmz","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/socials/website.png":"8ig0O","../images/socials/JEVG_Orig_Extend.png":"idWsp"}],"7wKI2":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","../images/socials/github.svg":"vP2m6","../images/socials/linkedin.svg":"5XSmz","../images/socials/website.png":"8ig0O","../images/socials/JEVG_Orig_Extend.png":"idWsp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7wKI2":[function(require,module,exports) {
 var ReactIs = require("react-is");
 // By explicitly using `prop-types` you are opting into new development behavior.
 // http://fb.me/prop-types-in-prod
@@ -28804,11 +28804,16 @@ const articles = [
     {
         title: "CORE 2023",
         description: "Click the link to view the CORE 2023 article.",
-        url: "public/CORE_2023-JEVG.pdf"
+        url: "https://www.rcs.cic.ipn.mx/2024_153_5/Synthetic%20EEG%20Signal%20Generator%20of%20Morphologies%20Associated%20with%20Epileptogenic%20Events.pdf"
+    },
+    {
+        title: "Newspaper Core Issue",
+        description: "Click the link to view the newspaper issue.",
+        url: "https://www.rcs.cic.ipn.mx/2024_153_5/"
     },
     {
         title: "CCE 2024",
-        description: "Click the link to view the CCE 2024 article.",
+        description: "Click the link to view the CCE 2024 article. (In the process of being published)",
         url: "public/CCE_2024-JEVG.pdf"
     }, 
 ];
@@ -28824,7 +28829,7 @@ const Portfolio = ()=>{
                 children: "Portfolio"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 46,
+                lineNumber: 51,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28848,7 +28853,7 @@ const Portfolio = ()=>{
                                 children: "Software Versions"
                             }, void 0, false, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 49,
+                                lineNumber: 54,
                                 columnNumber: 11
                             }, undefined),
                             softwareVersions.map((software)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28879,12 +28884,12 @@ const Portfolio = ()=>{
                                                 children: software.title
                                             }, void 0, false, {
                                                 fileName: "src/Components/Portfolio.jsx",
-                                                lineNumber: 53,
+                                                lineNumber: 58,
                                                 columnNumber: 17
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 52,
+                                            lineNumber: 57,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28896,19 +28901,19 @@ const Portfolio = ()=>{
                                             children: software.description
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 55,
+                                            lineNumber: 60,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, software.title, true, {
                                     fileName: "src/Components/Portfolio.jsx",
-                                    lineNumber: 51,
+                                    lineNumber: 56,
                                     columnNumber: 13
                                 }, undefined))
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 48,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28924,7 +28929,7 @@ const Portfolio = ()=>{
                                 children: "Articles"
                             }, void 0, false, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 60,
+                                lineNumber: 65,
                                 columnNumber: 11
                             }, undefined),
                             articles.map((article)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28955,12 +28960,12 @@ const Portfolio = ()=>{
                                                 children: article.title
                                             }, void 0, false, {
                                                 fileName: "src/Components/Portfolio.jsx",
-                                                lineNumber: 64,
+                                                lineNumber: 69,
                                                 columnNumber: 17
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 63,
+                                            lineNumber: 68,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28972,31 +28977,31 @@ const Portfolio = ()=>{
                                             children: article.description
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 66,
+                                            lineNumber: 71,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, article.title, true, {
                                     fileName: "src/Components/Portfolio.jsx",
-                                    lineNumber: 62,
+                                    lineNumber: 67,
                                     columnNumber: 13
                                 }, undefined))
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 59,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 47,
+                lineNumber: 52,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Portfolio.jsx",
-        lineNumber: 45,
+        lineNumber: 50,
         columnNumber: 5
     }, undefined);
 };
