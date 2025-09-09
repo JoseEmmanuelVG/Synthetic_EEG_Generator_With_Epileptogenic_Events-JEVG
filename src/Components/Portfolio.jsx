@@ -40,7 +40,7 @@ const articles = [
   {
     title: "CCE 2024",
     description: "Click the link to view the CCE 2024 article. (In the process of being published)",
-    url: "public/CCE_2024-JEVG.pdf",  // Ruta relativa al archivo PDF en la carpeta public
+    url: "https://ieeexplore.ieee.org/document/10770922",  // Ruta relativa al archivo PDF en la carpeta public
   },
 ];
 
