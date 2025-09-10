@@ -1,11 +1,13 @@
 {
-  "name": "JavaScript Portfolio (Node 20)",
-  "image": "mcr.microsoft.com/devcontainers/node:20",
-  "hostRequirements": { "cpus": 2 },
-  "postCreateCommand": "npm ci || npm install",
-  "postAttachCommand": {
-    "server": "npm start"
+  "name": "JS Portfolio (Alpine + Node 20)",
+  "image": "mcr.microsoft.com/devcontainers/base:alpine",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "20" },
+    "ghcr.io/devcontainers/features/github-cli:1": {}
   },
+  "postCreateCommand": "corepack enable || true; npm ci || npm install",
+  "postAttachCommand": { "server": "npm start" },
+
   "customizations": {
     "vscode": {
       "extensions": [
@@ -19,9 +21,7 @@
       }
     }
   },
-  "features": {
-    "ghcr.io/devcontainers/features/github-cli:1": {}
-  },
+
   "portsAttributes": {
     "3000": { "label": "App", "onAutoForward": "openPreview" }
   },
