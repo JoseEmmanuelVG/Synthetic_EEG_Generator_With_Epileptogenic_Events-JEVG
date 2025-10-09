@@ -1,29 +1,17 @@
 {
-  "name": "JS Portfolio (Alpine + Node 20)",
-  "image": "mcr.microsoft.com/devcontainers/base:alpine",
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": { "version": "20" },
-    "ghcr.io/devcontainers/features/github-cli:1": {}
+  "name": "React Workspace",
+  "image": "node:18-bullseye",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
   },
-  "postCreateCommand": "corepack enable || true; npm ci || npm install",
-  "postAttachCommand": { "server": "npm start" },
-
   "customizations": {
     "vscode": {
       "extensions": [
         "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
-        "GitHub.copilot"
-      ],
-      "settings": {
-        "emmet.includeLanguages": { "javascript": "javascriptreact" },
-        "emmet.triggerExpansionOnTab": true
-      }
+        "esbenp.prettier-vscode"
+      ]
     }
   },
-
-  "portsAttributes": {
-    "3000": { "label": "App", "onAutoForward": "openPreview" }
-  },
-  "forwardPorts": [3000]
+  "postCreateCommand": "npm install",
+  "remoteUser": "node"
 }

@@ -17,7 +17,9 @@ const ExternalLink = ({ href, children, style }) => (
     onClick={(e) => {
       // Si algún handler global hace preventDefault, intenta abrir manualmente:
       if (e.defaultPrevented) {
-        try { window.open(href, "_blank", "noopener,noreferrer"); } catch {}
+        try {
+          window.open(href, "_blank", "noopener,noreferrer");
+        } catch {}
       }
     }}
     aria-label={`Open external link: ${href}`}
